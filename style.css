@@ -1,0 +1,44 @@
+
+
+
+
+.target {
+display: flex;
+justify-content: flex-start;
+}
+
+.team {
+    display: flex;
+    justify-content: flex-start;
+    color: blue;
+    position: relative;
+}
+
+.content{
+    display: flex;
+    position: fixed;
+    margin: 0 auto;
+
+}
+
+.content a {
+    display: block; /* 將<a>標籤設置為block */
+    border: 1px solid #000;
+    padding: 5px 10px;
+    margin: 5px;
+    text-decoration: none;
+    color: #000;
+    width: 150px; /* 可根據需要設定適當的寬度 */
+    text-align: center; /* 讓文字置中 */
+}
+.map{
+    margin-left: 200px;
+}
+.text{
+    margin-left: 100px;
+}
+
+.body{
+    height: 1200px; 
+    overflow-y: scroll;
+}
