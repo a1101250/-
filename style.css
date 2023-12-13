@@ -82,3 +82,17 @@ justify-content: flex-start;
     color: #09B6B0; 
     text-decoration: underline;
 }
+
+/*首頁以外的css*/
+.else {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    padding-top: 50px;
+    padding-left: 50px;
+    align-items: center;
+}
+.else p{
+    font-size: 20px;
+    color: #09B6B0;
+}
