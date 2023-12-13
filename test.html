@@ -9,6 +9,25 @@ href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>偵環</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // 選取所有帶有 .fw-bold 類別的超連結
+            var navLinks = document.querySelectorAll('.fw-bold');
+    
+            // 遍歷超連結，為每個超連結添加點擊事件監聽器
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function () {
+                    // 移除所有具有 .active 類別的超連結的 .active 類別
+                    navLinks.forEach(function (navLink) {
+                        navLink.classList.remove('active');
+                    });
+    
+                    // 將被點擊的超連結添加 .active 類別
+                    link.classList.add('active');
+                });
+            });
+        });
+    </script>
 </head>
 <body>
     <div class="container-md">
