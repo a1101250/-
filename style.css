@@ -86,6 +86,7 @@ justify-content: flex-start;
 /*首頁以外的css*/
 .else {
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     position: relative;
     padding-top: 50px;
@@ -95,6 +96,11 @@ justify-content: flex-start;
 .else p{
     font-size: 20px;
     color: #09B6B0;
+}
+
+.picture {
+    position: relative;
+    width: 100%; 
 }
 
 
