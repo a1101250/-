@@ -27,7 +27,25 @@ href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
                 });
             });
         });
+
+        document.addEventListener('DOMContentLoaded', function () {
+        // 取得可點選的方框
+        var clickableMarkers = document.querySelectorAll('.clickable-marker');
+
+        // 為每個方框添加點擊事件監聽器
+        clickableMarkers.forEach(function (marker) {
+            marker.addEventListener('click', function () {
+                // 獲取方框上的 data-marker 屬性值
+                var markerValue = marker.getAttribute('data-marker');
+                
+                // 在這裡執行顯示視窗的操作，你可以使用現有的函數或庫，例如 Bootstrap 的 Modal。
+                // 示範：
+                alert('你點擊了方框 ' + markerValue);
+            });
+        });
+    });
     </script>
+
 </head>
 <body>
     <div class="container-md">
@@ -76,8 +94,18 @@ href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
                                 D = library_sensor_library_2F_east<br>
                             </p>
                         </div>
-                        <div class="map">
-                            <img src="img/secondfloor.jpg"  class="float-none"  alt=" " width="100%" height="">
+                        <div class="position-relative">
+                            <div class="map text-center" id="secondFloorMap">
+                                <div class="picture">
+                                    <img src="img/secondfloor.jpg"  class="float-none"  alt=" " width="100%" height="100%">
+
+                                    <!-- 可點選的方框 -->
+                                    <div class="clickable-marker" data-marker="A" style="top: 45.5%; left: 49.9%;"></div>
+                                    <div class="clickable-marker" data-marker="B" style="top: 43%; left: 25.5%;"></div>
+                                    <div class="clickable-marker" data-marker="C" style="top: 65%; left: 26.5%;"></div>
+                                    <div class="clickable-marker" data-marker="D" style="top: 90.5%; left: 22.9%;"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -90,8 +118,15 @@ href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
                             <h1>三樓平面圖</h1>
                             <p>E = library_sensor_library_3F_book</p>
                         </div>
-                        <div class="map">
-                            <img src="img/thirdfloor.jpg"  class="float-none"  alt=" " width="100%" height="">
+                        <div class="position-relative">
+                            <div class="map text-center" id="thirdFloorMap">
+                                <div class="picture">
+                                    <img src="img/thirdfloor.jpg"  class="float-none"  alt=" " width="100%" height="100%">
+
+                                    <!-- 可點選的方框 -->
+                                    <div class="clickable-marker" data-marker="D" style="top: 39%; left: 35.5%;"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -106,8 +141,16 @@ href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
                                 G = library_sensor_library_4F_north<br>
                             </p>
                         </div>
-                        <div class="map">
-                            <img src="img/fourthfloor.jpg"  class="float-none"  alt=" " width="100%" height="">
+                        <div class="position-relative">
+                            <div class="map text-center" id="forthFloorMap">
+                                <div class="picture">
+                                    <img src="img/fourthfloor.jpg"  class="float-none"  alt=" " width="100%" height="100%">
+
+                                    <!-- 可點選的方框 -->
+                                    <div class="clickable-marker" data-marker="F" style="top: 55%; left: 13.5%;"></div>
+                                    <div class="clickable-marker" data-marker="G" style="top: 37%; left: 93.5%;"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -123,8 +166,17 @@ href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
                                J  = library_sensor_library_5F_centerce<br>
                             </p>
                         </div>
-                        <div class="map">
-                            <img src="img/fifthfloor.jpg"  class="float-none"  alt=" " width="100%" height="">
+                        <div class="position-relative">
+                            <div class="map text-center" id="fifthFloorMap">
+                                <div class="picture">
+                                    <img src="img/fifthfloor.jpg"  class="float-none"  alt=" " width="100%" height="100%">
+
+                                    <!-- 可點選的方框 -->
+                                    <div class="clickable-marker" data-marker="H" style="top: 55%; left: 15.5%;"></div>
+                                    <div class="clickable-marker" data-marker="I" style="top: 34%; left: 38.5%;"></div>
+                                    <div class="clickable-marker" data-marker="J" style="top: 50%; left: 45%;"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
