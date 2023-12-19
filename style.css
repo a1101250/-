@@ -1,115 +1,123 @@
 
 .target {
-display: flex;
-justify-content: flex-start;
-}
-
-.team {
     display: flex;
     justify-content: flex-start;
-    position: relative;
-    padding-top: 50px;
-    align-items: center;
-}
-.team p{
-    font-size: 20px;
-}
-
-.content img{
-    border-radius: 50000px;
-}
-
-.content{
-    display: flex;
-    position: fixed;
-    margin: 0 auto;
-    padding-top: 50px;
-
-}
-.content h2{
-    padding-top: 30px;
-}
-
-.content p{
-    font-size: 18px;
-}
-
-.content a {
-    display: block; /* 將<a>標籤設置為block */
-    padding-top: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    text-decoration: none;
-    color: #4d4d4d;
-    width: 150px; /* 可根據需要設定適當的寬度 */
-    text-align: start; 
-}
-.map{
-    margin-left: 50px;
-}
-.text{
-    margin-left: 50px;
-}
-.body{
-    padding-top: 50px;
-    height: 1200px; 
-    overflow-y: scroll;
-}
-.center-button {
-    text-align: start; 
-    margin-top: 20px; 
-}
-
-.center-button button {
-    background-color: #09B6B0; 
-    color: #FFFFFF; 
-    border-color: #09B6B0;
-}
-
-.fw-bold.active {
-    color: #09B6B0; 
-    text-decoration: underline; 
-}
-
-.cool a {
-    color: #000;
-    text-decoration: none; 
-    transition: color 0.3s; 
-}
-
-.cool a:hover {
-    color: #09B6B0; 
-    text-decoration: underline;
-}
-
-/*首頁以外的css*/
-.else {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    position: relative;
-    padding-top: 50px;
-    padding-left: 50px;
-    align-items: center;
-}
-.else p{
-    font-size: 20px;
-    color: #09B6B0;
-}
-
-.picture {
-    position: relative;
-    width: 100%; 
-}
-
-
-/* 可點選的方框 */
-.clickable-marker {
-    position: absolute;
-    width: 10%; 
-    height: 10%;
-    background-color: rgb(0,0,25,0); 
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-    z-index: 2; 
-}
+    }
+    .content {
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+        padding-top: 50px;
+        padding-left: 50px;
+        align-items: center;
+    }
+    .team {
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+        padding-top: 50px;
+        padding-left: 50px;
+        align-items: center;
+    }
+    .team p{
+        font-size: 20px;
+    }
+    
+    .content img{
+        border-radius: 50000px;
+    }
+    
+    .content{
+        display: flex;
+        position: fixed;
+        margin: 0 auto;
+        padding-top: 50px;
+    
+    }
+    .content h2{
+        padding-top: 30px;
+    }
+    
+    .content p{
+        font-size: 18px;
+    }
+    
+    .content a {
+        display: block; /* 將<a>標籤設置為block */
+        padding-top: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        text-decoration: none;
+        color: #4d4d4d;
+        width: 150px; /* 可根據需要設定適當的寬度 */
+        text-align: start; 
+    }
+    .map{
+        margin-left: 50px;
+    }
+    .text{
+        margin-left: 50px;
+    }
+    .body{
+        padding-top: 50px;
+        height: 1200px; 
+        overflow-y: scroll;
+    }
+    .center-button {
+        text-align: start; 
+        margin-top: 20px; 
+    }
+    
+    .center-button button {
+        background-color: #09B6B0; 
+        color: #FFFFFF; 
+        border-color: #09B6B0;
+    }
+    
+    .fw-bold.active {
+        color: #09B6B0; 
+        text-decoration: underline; 
+    }
+    
+    .cool a {
+        color: #000;
+        text-decoration: none; 
+        transition: color 0.3s; 
+    }
+    
+    .cool a:hover {
+        color: #09B6B0; 
+        text-decoration: underline;
+    }
+    
+    /*首頁以外的css*/
+    .else {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: relative;
+        padding-top: 50px;
+        align-items: center;
+    }
+    .else p{
+        font-size: 20px;
+        color: #09B6B0;
+    }
+    
+    .picture {
+        position: relative;
+        width: 100%; 
+    }
+    
+    
+    /* 可點選的方框 */
+    .clickable-marker {
+        position: absolute;
+        width: 10%; 
+        height: 10%;
+        background-color: rgb(0,0,25,0); 
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        z-index: 2; 
+    }
+    
